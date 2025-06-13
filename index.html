@@ -3,11 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Website</title>
+    <title>Bo Li</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my personal website.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">about</a></li>
+                <li><a href="publications.html">publications</a></li>
+                <li><a href="CV.pdf">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Left sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src="profile.jpg" alt="Bo Li" class="profile-image">
+                <h1>Bo Li</h1>
+                <p class="title">Master student at<br>National University of Singapore</p>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i> Singapore
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bo-li-5b41812a6/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Harrison-Li" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://scholar.google.com/citations?user=xDQBBrQAAAAJ&hl=en" target="_blank">
+                    <i class="fas fa-graduation-cap"></i> Google Scholar
+                </a>
+                <a href="https://orcid.org/0009-0006-1288-7966" target="_blank">
+                    <i class="fab fa-orcid"></i> ORCID
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <section id="about">
+                <h2>About me</h2>
+                <p>
+                    My name is Bo Li. I am a fourth-year undergraduate student in the joint program between Queen Mary University of London (United Kingdom) and Northwestern Polytechnical University (China). I am from the Materials Science background and hope to utilize machine learning for data-driven materials design, especially in inverse design of materials and Large Language Models for automated labs to reduce the cost of traditional research.
+                </p>
+                
+                <h3>Education</h3>
+                <ol>
+                    <li>Queen Mary University of London, United Kingdom
+                        <ul>
+                            <li>First Class Honours in Materials Science and Engineering</li>
+                        </ul>
+                    </li>
+                    <li>Northwestern Polytechnical University, China</li>
+                </ol>
+            </section>
+
+            <section id="research">
+                <h2>Research</h2>
+                <p>
+                    SAMGPT is a molecule generative model based on the decoder of transformer, which is trained on the SMILES dataset. It can generate molecules with desired properties and has been used in various applications such as drug discovery and materials design.
+                </p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
