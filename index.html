@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="index.html" class="active">about</a></li>
                 <li><a href="publications.html">publications</a></li>
-                <li><a href="CV.pdf">CV</a></li>
+                <li><a href="BCV.pdf">CV</a></li>
             </ul>
         </nav>
     </header>
@@ -49,26 +49,53 @@
         <!-- Main content -->
         <main class="main-content">
             <section id="about">
-                <h2>About me</h2>
+                <h2>About Me</h2>
                 <p>
-                    My name is Bo Li. I am a fourth-year undergraduate student in the joint program between Queen Mary University of London (United Kingdom) and Northwestern Polytechnical University (China). I am from the Materials Science background and hope to utilize machine learning for data-driven materials design, especially in inverse design of materials and Large Language Models for automated labs to reduce the cost of traditional research.
+                    My name is <strong>Bo Li</strong>. I am a fourth-year undergraduate student in the joint program between <strong>Queen Mary University of London</strong> (United Kingdom) and <strong>Northwestern Polytechnical University</strong> (China). My background is in Materials Science, and I am passionate about leveraging machine learning for data-driven materials design—especially in the inverse design of materials and the use of Large Language Models for automated labs to reduce the cost of traditional research.
                 </p>
                 
                 <h3>Education</h3>
-                <ol>
-                    <li>Queen Mary University of London, United Kingdom
-                        <ul>
-                            <li>First Class Honours in Materials Science and Engineering</li>
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="edu-header">
+                            <span class="edu-institution"><strong>Queen Mary University of London</strong></span>
+                            <span style="margin-left: 8px;" class="edu-location">United Kingdom</span>
+                            <span style="margin-left: 8px;" class="edu-years">2021-2025</span>
+                        </div>
+                        <div class="edu-degree">BEng Materials Science and Engineering</div>
+                        <ul class="edu-details">
+                            <li>First Class Honours (10%)</li>
                         </ul>
-                    </li>
-                    <li>Northwestern Polytechnical University, China</li>
-                </ol>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-header">
+                            <span class="edu-institution"><strong>Northwestern Polytechnical University</strong></span>
+                            <span style="margin-left: 8px;" class="edu-location">(Joint Program) China</span>
+                            <span style="margin-left: 8px;" class="edu-years">2021-2025</span>
+                        </div>
+                        <div class="edu-degree">BEng Materials Science and Engineering</div>
+                    </div>
+                </div>
             </section>
 
             <section id="research">
                 <h2>Research</h2>
+                <h3>Inverse Design of Materials</h3>
                 <p>
-                    SAMGPT is a molecule generative model based on the decoder of transformer, which is trained on the SMILES dataset. It can generate molecules with desired properties and has been used in various applications such as drug discovery and materials design.
+                    SAMGPT is a molecule generative model based on the decoder of transformer, which is trained on the SMILES dataset. It can generate molecules with both conditional scaffold structure and desired properties (HOMO, LUMO, etc.) and has been used in Self-Assembled-Monolayer molecule generation for Perovskite solar cell devices, which achieved higher power conversion efficiency (PCE) compared with control samples (experimentally validated).
+                </p>
+                <p>
+                    Here is my GitHub repository relevant to this project:
+                    <a href="https://github.com/Harrison-Li/SAMGPT" target="_blank">https://github.com/Harrison-Li/SAMGPT</a>
+                </p>
+                <h3>Multi-AI agent system</h3>
+                <p>
+                    I developed a Perovskite Multi-AI Agent System designed to assist materials researchers—especially those without programming experience—in discovering new self-assembled monolayer (SAM) candidates for perovskites and other photoelectric materials. By simply describing their target properties (like HOMO and LUMO), users can generate potential molecules using integrated tools.
+                    The system also mines unstructured data from published literature to support model retraining and rapid validation. For researchers in experimental areas, by leverage retrival augmented generation (RAG) the agent can retrieve detailed information such as 1. material preparation 2.material property 3.device performance 4. device fabrication processes. I further integrated this knowledge into large language models, enabling the system to provide experimental guidance and analyze correlations between material choices, device structures, and performance.
+                    Finally, the model can search for precursor suppliers and retrosynthesis plan for new candidates.
+                </p>
+                <p>
+                    GitHub repository code will be released soon after manucript submission.
                 </p>
             </section>
         </main>

@@ -158,6 +158,11 @@ header nav ul li a.active {
     line-height: 1.6;
     margin-bottom: 15px;
     font-size: 15px;
+    text-align: justify;
+}
+
+.main-content li {
+    text-align: justify;
 }
 
 .main-content ol, .main-content ul {
@@ -324,6 +329,11 @@ header nav ul li a.active {
     .main-content {
         flex: 1;
         padding: 20px 0;
+    }
+    
+    .main-content p {
+        font-size: 16px;
+        text-align: justify;
     }
     
     header nav ul {
