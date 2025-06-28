@@ -1,34 +1,33 @@
-/* Base styles for mobile first */
-body {
+/* Reset and base styles */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-/* General Body & Typography */
+/* Mobile-first base styles */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
     color: #333;
     margin: 0;
-    padding: 2rem;
+    padding: 1rem;
 }
 
-/* Header and Navigation */
+/* Header and Navigation - Mobile First */
 header {
-    max-width: 1100px;
-    margin: 0 auto 4rem auto;
+    width: 100%;
+    margin: 0 auto 2rem auto;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 1rem;
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
 }
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 nav ul {
@@ -36,53 +35,62 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 15px;
-    justify-content: space-around;
     background: #f8f9fa;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
 }
 
 nav li {
-    display: inline-block;
-    margin-left: 2rem;
+    display: block;
+    width: 100%;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    font-size: 1.1rem;
-    padding-bottom: 5px;
+    font-size: 1rem;
     padding: 10px 15px;
     display: block;
     font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 nav a.active {
-    color: #9b59b6; /* A purple color similar to the example */
+    color: #9b59b6;
+    background: rgba(155, 89, 182, 0.1);
     border-bottom: 2px solid #9b59b6;
 }
 
-nav a:hover,
-header nav ul li a:hover,
-header nav ul li a.active {
+nav a:hover {
     color: #007bff;
+    background: rgba(0, 123, 255, 0.1);
     border-bottom: 2px solid #007bff;
 }
 
-/* Mobile-first container */
+/* Container - Mobile First */
 .container {
     display: block;
+    width: 100%;
     max-width: 100%;
     margin: 0;
-    padding: 15px;
+    padding: 0;
 }
 
-/* Mobile sidebar */
+/* Sidebar - Mobile First */
 .sidebar {
     width: 100%;
     background: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-section {
     margin-bottom: 20px;
 }
 
@@ -93,11 +101,13 @@ header nav ul li a.active {
     object-fit: cover;
     margin: 0 auto 15px;
     display: block;
+    border: 3px solid #e0e0e0;
 }
 
 .profile-section h1 {
     margin: 0 0 8px 0;
     font-size: 22px;
+    color: #333;
 }
 
 .title {
@@ -113,191 +123,247 @@ header nav ul li a.active {
     font-size: 14px;
 }
 
+.location i {
+    margin-right: 5px;
+}
+
 .social-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    max-width: 250px;
+    max-width: 280px;
     margin: 0 auto;
 }
 
 .social-links a {
     color: #333;
     text-decoration: none;
-    padding: 8px 12px;
+    padding: 10px 12px;
     font-size: 13px;
     background: white;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
 }
 
 .social-links a:hover {
     color: #007bff;
     background: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Mobile main content */
+.social-links i {
+    margin-right: 5px;
+}
+
+/* Main Content - Mobile First */
 .main-content {
     width: 100%;
-    padding: 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .main-content h2 {
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 24px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
 }
 
 .main-content h3 {
     color: #333;
-    margin: 20px 0 10px 0;
+    margin: 25px 0 15px 0;
     font-size: 20px;
+    color: #555;
 }
 
 .main-content p {
-    line-height: 1.6;
-    margin-bottom: 15px;
+    line-height: 1.7;
+    margin-bottom: 16px;
     font-size: 15px;
-    text-align: justify;
+    text-align: left;
+    color: #444;
+}
+
+.main-content p a {
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.main-content p a:hover {
+    border-bottom: 1px solid #007bff;
 }
 
 .main-content li {
-    text-align: justify;
+    margin-bottom: 5px;
+    line-height: 1.6;
 }
 
 .main-content ol, .main-content ul {
     padding-left: 20px;
+    margin-bottom: 16px;
 }
 
 .main-content section {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
-/* --- Responsive Design for Mobile --- */
-@media (max-width: 768px) {
-    body {
-        padding: 1rem;
-    }
-
-    .content-wrapper {
-        flex-direction: column; /* Stack columns vertically */
-        gap: 2rem;
-    }
-
-    nav {
-        justify-content: center; /* Center nav on mobile */
-    }
-
-    nav li {
-        margin: 0 1rem;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-    
-    /* Mobile responsiveness */
-    .container {
-        flex-direction: column;
-        padding: 10px;
-        gap: 20px;
-    }
-    
-    .sidebar {
-        flex: none;
-        width: 100%;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .profile-image {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .social-links {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-    
-    .social-links a {
-        font-size: 14px;
-    }
-    
-    .main-content {
-        padding: 10px;
-    }
-    
-    .main-content h2 {
-        font-size: 24px;
-    }
-    
-    .main-content h3 {
-        font-size: 20px;
-    }
-    
-    /* Navigation responsive */
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-    
-    header nav ul li {
-        display: block;
-        width: 100%;
-    }
-    
-    header nav ul li a {
-        display: block;
-        padding: 10px;
-    }
+/* Education section styles */
+.education-list {
+    margin-top: 15px;
 }
 
+.education-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #007bff;
+}
+
+.edu-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.edu-institution {
+    font-size: 16px;
+    color: #333;
+}
+
+.edu-location, .edu-years {
+    font-size: 14px;
+    color: #666;
+}
+
+.edu-degree {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.edu-details {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.edu-details li {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Small phones (up to 480px) */
 @media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+    
     .profile-image {
         width: 100px;
         height: 100px;
     }
     
-    .sidebar h1 {
+    .profile-section h1 {
         font-size: 20px;
     }
     
     .title {
-        font-size: 14px;
+        font-size: 13px;
     }
     
     .main-content {
-        padding: 5px;
+        padding: 15px;
+    }
+    
+    .main-content h2 {
+        font-size: 22px;
+    }
+    
+    .main-content h3 {
+        font-size: 18px;
     }
     
     .main-content p {
         font-size: 14px;
     }
     
+    .social-links {
+        grid-template-columns: 1fr;
+        max-width: 200px;
+    }
+    
     .social-links a {
         font-size: 12px;
-        padding: 5px;
+        padding: 8px;
+    }
+    
+    .edu-header {
+        gap: 3px;
+    }
+    
+    .edu-institution {
+        font-size: 15px;
+    }
+    
+    .education-item {
+        padding: 15px;
     }
 }
 
-/* Tablet styles (768px and up) */
+/* Tablets (768px and up) */
 @media (min-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+    
+    header {
+        max-width: 1200px;
+        margin: 0 auto 3rem auto;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    
+    nav li {
+        width: auto;
+    }
+    
+    nav a {
+        font-size: 1.1rem;
+    }
+    
     .container {
         display: flex;
         max-width: 1200px;
         margin: 0 auto;
         gap: 30px;
-        padding: 20px;
     }
     
     .sidebar {
-        flex: 0 0 280px;
+        flex: 0 0 300px;
         text-align: left;
         margin-bottom: 0;
+        height: fit-content;
+        position: sticky;
+        top: 20px;
     }
     
     .profile-image {
@@ -308,10 +374,17 @@ header nav ul li a.active {
     
     .profile-section h1 {
         font-size: 26px;
+        text-align: left;
     }
     
     .title {
         font-size: 16px;
+        text-align: left;
+    }
+    
+    .location {
+        text-align: left;
+        font-size: 15px;
     }
     
     .social-links {
@@ -324,11 +397,20 @@ header nav ul li a.active {
     .social-links a {
         text-align: left;
         font-size: 14px;
+        padding: 12px 15px;
     }
     
     .main-content {
         flex: 1;
-        padding: 20px 0;
+        padding: 30px;
+    }
+    
+    .main-content h2 {
+        font-size: 28px;
+    }
+    
+    .main-content h3 {
+        font-size: 22px;
     }
     
     .main-content p {
@@ -336,28 +418,70 @@ header nav ul li a.active {
         text-align: justify;
     }
     
-    header nav ul {
-        justify-content: center;
-        gap: 40px;
-        padding: 20px;
+    .edu-header {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .edu-institution {
+        font-size: 18px;
+    }
+    
+    .edu-location, .edu-years {
+        font-size: 15px;
+    }
+    
+    .edu-degree {
+        font-size: 16px;
     }
 }
 
-/* Desktop styles (1024px and up) */
+/* Large desktops (1024px and up) */
 @media (min-width: 1024px) {
-    .sidebar {
-        flex: 0 0 320px;
-    }
-    
     .container {
         gap: 40px;
+        max-width: 1400px;
+    }
+    
+    .sidebar {
+        flex: 0 0 350px;
+    }
+    
+    .main-content {
+        padding: 40px;
     }
     
     .main-content h2 {
-        font-size: 28px;
+        font-size: 30px;
+    }
+    
+    .main-content h3 {
+        font-size: 24px;
     }
     
     .main-content p {
-        font-size: 16px;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .profile-section h1 {
+        font-size: 28px;
+    }
+}
+
+/* Extra large screens (1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1600px;
+    }
+    
+    .sidebar {
+        flex: 0 0 380px;
     }
 }
