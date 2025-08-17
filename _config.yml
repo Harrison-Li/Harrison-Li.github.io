@@ -22,7 +22,7 @@ repository               : "Harrison-Li/Harrison-Li.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile2.png"
+  avatar           : "/images/profile2.png"
   name             : "Bo Li"
   pronouns         : # example: "she/her"  
   bio              : "Master student at National University of Singapore"
@@ -38,7 +38,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0006-1288-7966"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
 
