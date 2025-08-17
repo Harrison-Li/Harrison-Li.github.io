@@ -6,6 +6,8 @@ redirect_from:
   - /about.html
 ---
 
+# About me
+
 My name is **Bo Li**. I am currently a postgraduate student at NUS with a background in Materials Science.  
 
 My research interests lie at the intersection of artificial intelligence and computational chemistry, with a focus on data-driven strategies to accelerate materials discovery.  
