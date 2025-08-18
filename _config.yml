@@ -8,8 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Bo Li"
+site_theme               : "air" # Currently available options are "default", "air"
+title                    : "Bo Li's Homepage"
 title_separator          : "-"
 name                     : &name "Bo Li"
 description              : &description "personal description"
