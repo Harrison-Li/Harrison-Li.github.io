@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Master student at National University of Singapore"
   location         : "Singapore"
-  uri              : "harrison-li.github.io"
+  uri              : #"harrison-li.github.io"
   email            : "b.li.003124@gmail.com" 
 
   # Academic websites
