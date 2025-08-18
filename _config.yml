@@ -35,8 +35,8 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   inspire-hep      : # URL
   impactstory      : # URL
-  linkedin         : "https://www.linkedin.com/in/bo-li-5b41812a6/"
-  github           : "https://github.com/Harrison-Li"
+  linkedin         : "bo-li-5b41812a6" # Username 
+  github           : "Harrison-Li" # Username 
   googlescholar    : "https://scholar.google.com/citations?user=xDQBBrQAAAAJ&hl=en"
   orcid            : "https://orcid.org/0009-0006-1288-7966"
   semantic         : # URL
@@ -53,7 +53,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "https://bsky.app/profile/harrison-li.bsky.social" # Replace this with you Bluesky username
+  bluesky          : "harrison-li.bsky.social" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
