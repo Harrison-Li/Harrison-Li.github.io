@@ -33,10 +33,11 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=xDQBBrQAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
   linkedin         : "https://www.linkedin.com/in/bo-li-5b41812a6/"
+  github           : "https://github.com/Harrison-Li"
+  googlescholar    : "https://scholar.google.com/citations?user=xDQBBrQAAAAJ&hl=en"
   orcid            : "https://orcid.org/0009-0006-1288-7966"
   semantic         : # URL
   pubmed           : # URL
@@ -47,7 +48,6 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/Harrison-Li"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
