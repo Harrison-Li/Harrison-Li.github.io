@@ -39,4 +39,8 @@ In the future, I aim to establish an automated materials discovery pipeline enco
     🏆 First Class Honours (Top 10%)
   </p>
 </div>
+## Research Interests
 
+Bellow is my desired workflow for my future academic journey !
+
+![image-20250820161915563](assets/image-20250820161915563.png)
