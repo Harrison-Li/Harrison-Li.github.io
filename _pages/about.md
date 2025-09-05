@@ -25,7 +25,7 @@ In the future, I aim to establish an automated materials discovery pipeline enco
     <span style="font-style: italic; color: #cc0000;">📍 Singapore, 2025–Present</span>
   </div>
   <p style="margin-top: 10px; margin-bottom: 0; color: #cc0000;">
-    <b>MSc Materials Science and Engineering</b>
+    <b>MSc in Materials Science and Engineering</b>
   </p>
 </div>
 
@@ -35,11 +35,11 @@ In the future, I aim to establish an automated materials discovery pipeline enco
     <span style="font-style: italic; color: #cc0000;">📍 United Kingdom, 2021–2025</span>
   </div>
   <p style="margin-top: 10px; margin-bottom: 0; color: #cc0000;">
-    <b>BEng Materials Science and Engineering</b><br>
+    <b>BEng in Materials Science and Engineering</b><br>
     🏆 First Class Honours (Top 10%)
   </p>
 </div>
-## Research Interests
+## Research perspective
 
 Bellow is my desired workflow for my future academic journey !
 
