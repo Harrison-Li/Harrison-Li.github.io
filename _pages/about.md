@@ -41,6 +41,12 @@ In the future, I aim to establish an automated materials discovery pipeline enco
 </div>
 ## Research perspective
 
-Bellow is my desired workflow for my future academic journey !
+**Interesting topics**
+1. Recently, I read a short report questioning whether inverse design truly accelerates materials discovery. Even advanced models like MatterGen sometimes suggest novel crystalline materials that, when synthesized, turn out to already exist — but in amorphous rather than crystalline form. This raises an important question: can we propose a new graph representation for amorphous materials? see [this article](https://www.nature.com/articles/d41586-025-03147-9)
+
+2. The next major challenge is often described as the “elephant in the lab”: how can we connect theoretically accessible materials to practical synthesis routes? Generative models suggest materials that are challenging or even impossible to synthesize in reality. For further discussion, see [this article on ChemRxiv](https://chemrxiv.org/engage/chemrxiv/article-details/68b1ed3623be8e43d6d76098).
+
+
+Above are issues that I want to solve, but automatic pipeline is my final aim. Below is my desired workflow for my future academic journey !
 
 ![image-20250820161915563](assets/image-20250820161915563.png)

@@ -6,6 +6,10 @@ excerpt: "Research"
 author_profile: true
 ---
 
+**Agentic optimization for molecule screening (In process)**
+
+Combine LLM, evolutionary algorithms, QM computing for carbon capture molecule discovery.
+
 **Inverse Design of Materials**
 
 SAMGPT is a molecule generative model based on the decoder of transformer, which is trained on the SMILES dataset. It can generate molecules with both conditional scaffold structure and desired properties (HOMO, LUMO, etc.) and has been used in Self-Assembled-Monolayer molecule generation for Perovskite solar cell devices, which achieved higher power conversion efficiency (PCE) compared with control samples (experimentally validated).
